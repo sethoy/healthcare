@@ -1,0 +1,263 @@
+/* Container for the whole section */
+.healthcare-header {
+  background-color: #f4f9fc; /* Light bluish background from image */
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.logo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Flexbox to align icon and text */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Styled Icon Placeholder */
+.logo-icon {
+  background-color: #f9a825; /* Yellow/Orange shade */
+  color: white;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Logo Text Styles */
+.logo-text {
+  color: #20335d; /* Navy Blue */
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.logo-text span {
+  color: #f9a825;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.logo-text sup {
+  font-size: 10px;
+  top: -1em;
+}
+
+/* Subtext/Tagline */
+.tagline {
+  color: #20335d;
+  font-size: 14px;
+  margin: 4px 0 0 0;
+  padding-left: 2px;
+}
+:root {
+  --primary-navy: #20335d;
+  --border-color: #cbd5e1;
+  --bg-light: #f8fafc;
+}
+
+.quiz-container {
+  max-width: 500px;
+  margin: 60px auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Progress Bar */
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.progress-label {
+  font-size: 14px;
+  color: var(--primary-navy);
+}
+
+.progress-bar {
+  width: 250px;
+  height: 8px;
+  background-color: #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--primary-navy);
+}
+
+/* Typography */
+.quiz-question {
+  color: var(--primary-navy);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.help-icon {
+  font-size: 18px;
+  border: 1px solid var(--primary-navy);
+  border-radius: 50%;
+  padding: 0 6px;
+  vertical-align: middle;
+}
+
+/* Option Cards */
+.options-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  background: white;
+}
+
+.option-card:hover {
+  border-color: var(--primary-navy);
+  background-color: var(--bg-light);
+}
+
+/* Custom Radio Circle */
+.option-card input[type="radio"] {
+  display: none; /* Hide default radio */
+}
+
+.custom-radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary-navy);
+  border-radius: 50%;
+  margin-right: 15px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* Selection state */
+.option-card input:checked + .custom-radio::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  background: var(--primary-navy);
+  border-radius: 50%;
+}
+
+.option-title {
+  font-size: 18px;
+  color: var(--primary-navy);
+  font-weight: 500;
+  display: block;
+}
+
+.option-subtext {
+  font-size: 15px;
+  color: var(--primary-navy);
+  margin: 4px 0 0 0;
+  line-height: 1.4;
+}
+
+/* Back Link */
+.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  color: var(--primary-navy);
+  text-decoration: underline;
+  font-size: 16px;
+}
+.site-footer {
+  background-color: #2b335e; /* Deep navy from image */
+  color: #ffffff;
+  padding: 60px 131px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+/* Button Styling */
+.btn-get-touch {
+  background-color: #f9a825;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* Navigation Grid */
+.footer-content {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 40px;
+  min-width: 300px;
+}
+
+.nav-col a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Disclaimer Text */
+.footer-disclaimer {
+  flex: 1;
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer-disclaimer p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-disclaimer a {
+  color: #f9a825;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: right;
+  font-weight: bold;
+}
