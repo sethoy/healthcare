@@ -279,15 +279,4 @@ body {
     background-color: transparent;
 }
 
-/* 3. Elevate your forms, buttons, and telephone links above the hidden overlay */
-form,
-form input,
-form select,
-form button,
-header .cta-section a,
-.footer-phone,
-.footer-socials a,
-.footer-links a {
-    position: relative;
-    z-index: 20; /* Sits completely on top of the overlay link layer */
-}
+
